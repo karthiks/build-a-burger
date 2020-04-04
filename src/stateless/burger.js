@@ -13,9 +13,8 @@ const Burger = (props) => {
         });
     });
     // Flattening the array with reduce
-    transformedIngredients = transformedIngredients.reduce((arr, el) => {
-        return arr.concat(el)
-    }, []);
+    const flatten = (arr,el) => arr.concat(el);
+    transformedIngredients = transformedIngredients.reduce(flatten, []);
     if (transformedIngredients.length === 0) {
         transformedIngredients = <p>Please start adding ingredients!</p>
     };
