@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from './stateless/layout';
 
 function App() {
   return (
-    <div>
+    <Layout>
       <h3>Just cleaned things up to bare bones...</h3>
-    </div>
+    </Layout>
   );
 }
 
