@@ -1,10 +1,11 @@
 import React from 'react';
 import Layout from './stateless/layout';
+import BurgerBuilder from './stateful/burgerBuilder'
 
 function App() {
   return (
     <Layout>
-      <h3>Just cleaned things up to bare bones...</h3>
+      <BurgerBuilder />
     </Layout>
   );
 }
