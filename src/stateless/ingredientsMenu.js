@@ -12,6 +12,7 @@ const controls = [
 const IngredientsMenu = (props) => {
     return (
         <div className={classes.BuildControls}>
+            <p>Price Now is <strong>{props.price}</strong></p>
         {/* 'controls' array is mapped over to pass labels and types onto each control */ }
         {
             controls.map((ctrl) => {

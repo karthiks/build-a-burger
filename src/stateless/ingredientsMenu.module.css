@@ -1,8 +1,13 @@
+/* p {
+    display: block;
+    width: 100%;
+} */
+
 .BuildControls {
     width: 100%;
     background-color: #cf8f2e;
-    display: flex;
-    align-items: center;
+    display: block;
+    align-items: baseline;
     box-shadow: 0 2px 1px #ccc;
     margin: auto;
     padding: 10px 0

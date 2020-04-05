@@ -1,6 +1,6 @@
 .BuildControl {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: left;
   margin: 5px 0;
 }
