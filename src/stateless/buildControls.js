@@ -21,6 +21,7 @@ const BuildControls = (props) => {
                         label={ctrl.label}
                         addIngredient={() => props.addIngredient(ctrl.type)}
                         removeIngredient={() => props.removeIngredient(ctrl.type)}
+                        isNotYetAdded={props.ingredients[ctrl.type]<1}
                     />
                 )
             })
