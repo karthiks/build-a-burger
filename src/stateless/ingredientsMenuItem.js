@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './buildControl.module.css';
+import classes from './ingredientsMenuItem.module.css';
 
-const BuildControl = (props) => {
+const IngredientsMenuItem = (props) => {
     return (
         <div className={classes.BuildControl}>
             <div className={classes.Label}>{props.label}</div>
@@ -10,4 +10,4 @@ const BuildControl = (props) => {
         </div>
     )
 }
-export default BuildControl;
+export default IngredientsMenuItem;

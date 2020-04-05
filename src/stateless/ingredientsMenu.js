@@ -1,6 +1,6 @@
 import React from 'react'
-import BuildControl from './buildControl'
-import classes from './buildControls.module.css';
+import IngredientsMenuItem from './ingredientsMenuItem'
+import classes from './ingredientsMenu.module.css';
 
 const controls = [
     { label: 'Salad', type: 'salad' },
@@ -9,14 +9,14 @@ const controls = [
     { label: 'Bacon', type: 'bacon' },
 ];
 
-const BuildControls = (props) => {
+const IngredientsMenu = (props) => {
     return (
         <div className={classes.BuildControls}>
         {/* 'controls' array is mapped over to pass labels and types onto each control */ }
         {
             controls.map((ctrl) => {
                 return (
-                    <BuildControl
+                    <IngredientsMenuItem
                         key={ctrl.label}
                         label={ctrl.label}
                         addIngredient={() => props.addIngredient(ctrl.type)}
@@ -30,4 +30,4 @@ const BuildControls = (props) => {
     );
 };
 
-export default BuildControls;
+export default IngredientsMenu;
