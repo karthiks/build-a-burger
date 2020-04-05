@@ -16,7 +16,7 @@ const Burger = (props) => {
     // const flatten = (arr,el) => arr.concat(el);
     // transformedIngredients = transformedIngredients.reduce(flatten, []);
     transformedIngredients = transformedIngredients.flat(); // Defaults to 1 level.
-    console.log(transformedIngredients);
+    // console.log(transformedIngredients);
     if (transformedIngredients.length === 0) {
         transformedIngredients = <p>Please start adding ingredients!</p>
     };
@@ -31,14 +31,20 @@ const Burger = (props) => {
 }
 
 Burger.propTypes = {
-    ingredients: PropTypes.shape({
-        "bread-top" : PropTypes.number,
-        "meat" : PropTypes.number,
-        "cheese" : PropTypes.number,
-        "salad" : PropTypes.number,
-        "bacon" : PropTypes.number,
-        "bread-bottom" : PropTypes.number
-    })
-}
+    ingredients: function(props, propName, componentName) {
+        const ingredients = props[propName];
+        const ingredientsList = Object.keys(ingredients);
+        if (typeof(ingredients) !== typeof({})) {
+            return new Error(`Invalid prop "${propName}" supplied to "${componentName}". Validation Failed!`);
+        }
+        const predefinedIngredients = ["salad", "bacon", "cheese", "meat"];
+        const hasUnknownIngredients = ing=>!predefinedIngredients.includes(ing);
+        const undefinedIngredients = ingredientsList.filter(k => hasUnknownIngredients(k));
+        if (undefinedIngredients.length > 0) {
+            return new Error(`Invalid prop "${propName}" supplied to "${componentName}". 
+            Validation Failed because of unknown ingredients like "${undefinedIngredients}"`);
+        }
+    }
+};
 
 export default Burger;
