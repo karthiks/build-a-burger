@@ -17,7 +17,7 @@ const IngredientsMenu = (props) => {
         .reduce((sum,v)=>sum+v,0);
     return (
         <div className={classes.BuildControls}>
-            <p>Price Now is <strong>{props.price}</strong></p>
+            <p>Price Now is <strong>{props.price.toFixed(2)}</strong></p>
         {/* 'controls' array is mapped over to pass labels and types onto each control */ }
         {
             controls.map((ctrl) => {
