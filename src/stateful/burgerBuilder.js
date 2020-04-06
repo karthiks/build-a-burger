@@ -3,6 +3,7 @@ import Aux from '../hoc/aux';
 import Burger from '../stateless/burger';
 import IngredientsMenu from '../stateless/ingredientsMenu';
 import Modal from '../stateless/utils/modal';
+import OrderSummary from '../stateless/orderSummary';
 
 const INGREDIENT_PRICES = {
     salad: 0.5,
@@ -13,9 +14,9 @@ const INGREDIENT_PRICES = {
 class BurgerBuilder extends Component {
     state = {
         ingredients: {
-            salad: 0,
+            salad: 1,
             bacon: 0,
-            cheese: 0,
+            cheese: 5,
             meat:0,
         },
         totalPrice: 4
@@ -45,7 +46,9 @@ class BurgerBuilder extends Component {
     render() {
         return (
             <Aux>
-                <Modal/>
+                <Modal>
+                    <OrderSummary ingredients={this.state.ingredients}/>
+                </Modal>
                 <Burger ingredients={this.state.ingredients} />
                 <IngredientsMenu
                     ingredients={this.state.ingredients}
