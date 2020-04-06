@@ -19,7 +19,8 @@ class BurgerBuilder extends Component {
             cheese: 5,
             meat:0,
         },
-        totalPrice: 4
+        totalPrice: 4,
+        orderNow:false
     };
 
     addIngredientHandler = (type) => {
@@ -43,18 +44,35 @@ class BurgerBuilder extends Component {
         });
     };
 
+    placeOrder = () => {
+        this.setState({
+            orderNow: true
+        });
+    };
+
+    cancelOrder = () => {
+        this.setState({
+            orderNow: false
+        });
+    }
+
     render() {
+        const visibility = this.state.orderNow ? "visible" : "hidden";
         return (
             <Aux>
-                <Modal>
-                    <OrderSummary ingredients={this.state.ingredients}/>
+                <Modal 
+                    style={{ visibility: visibility}}
+                    orderNow={this.state.orderNow}
+                    cancelOrder={this.cancelOrder}>
+                        <OrderSummary ingredients={this.state.ingredients}/>
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
                 <IngredientsMenu
                     ingredients={this.state.ingredients}
                     price={this.state.totalPrice}
                     addIngredient={this.addIngredientHandler}
-                    removeIngredient={this.removeIngredientHandler} />
+                    removeIngredient={this.removeIngredientHandler}
+                    placeOrder={this.placeOrder} />
             </Aux>
         );
     }

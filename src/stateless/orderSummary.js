@@ -6,7 +6,7 @@ const OrderSummary = (props) => {
     for (let k in props.ingredients) {
         let v = props.ingredients[k];
         if (v>0) {
-            ingredients.push(<li key={k}><span>{k}</span> : {v}</li>);
+            ingredients.push(<li key={k}><span style={{textTransform:'capitalize'}}>{k}</span> : {v}</li>);
         }
     };
     return (

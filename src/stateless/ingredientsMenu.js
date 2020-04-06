@@ -33,6 +33,7 @@ const IngredientsMenu = (props) => {
             })
         }
             <button 
+                onClick={props.placeOrder}
                 className={classes.OrderButton}
                 disabled={ingredientsAddedCount<1}
             > Order Now </button>
