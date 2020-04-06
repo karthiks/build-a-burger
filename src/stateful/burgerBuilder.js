@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Aux from '../hoc/aux';
-import Burger from '../stateless/burger'
-import IngredientsMenu from '../stateless/ingredientsMenu'
+import Burger from '../stateless/burger';
+import IngredientsMenu from '../stateless/ingredientsMenu';
+import Modal from '../stateless/utils/modal';
 
 const INGREDIENT_PRICES = {
     salad: 0.5,
@@ -44,6 +45,7 @@ class BurgerBuilder extends Component {
     render() {
         return (
             <Aux>
+                <Modal/>
                 <Burger ingredients={this.state.ingredients} />
                 <IngredientsMenu
                     ingredients={this.state.ingredients}
