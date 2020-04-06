@@ -56,6 +56,10 @@ class BurgerBuilder extends Component {
         });
     }
 
+    checkout = () => {
+        alert("Checking out...");
+    }
+
     render() {
         const visibility = this.state.orderNow ? "visible" : "hidden";
         return (
@@ -64,7 +68,10 @@ class BurgerBuilder extends Component {
                     style={{ visibility: visibility}}
                     orderNow={this.state.orderNow}
                     cancelOrder={this.cancelOrder}>
-                        <OrderSummary ingredients={this.state.ingredients}/>
+                        <OrderSummary 
+                            ingredients={this.state.ingredients}
+                            checkout={this.checkout}
+                            cancelOrder={this.cancelOrder}/>
                 </Modal>
                 <Burger ingredients={this.state.ingredients} />
                 <IngredientsMenu
