@@ -3,7 +3,6 @@ import classes from "./modal.module.css";
 import Aux from '../../hoc/aux';
 import Backdrop from './backdrop';
 import PropTypes from 'prop-types';
-import { render } from '@testing-library/react';
 
 const Modal = (props) => {
     // console.log("Show Modal? : ", props.orderNow);
