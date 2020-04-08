@@ -1,4 +1,29 @@
+## The Creator
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Need more inspiration??
+- See [React Rocks](https://react.rocks/)
+- See https://reactjsexample.com/ for a nice collection of often useful examples done in React.js
+- See https://madewithreact.com/ for a collection of websites and applications using the React or React Native JavaScript library.
+- See http://buildwithreact.com/ for periodical of tutorials and advanced articles for the ReactJS library.
+- See https://madewithreactjs.com/ for a collection of projects made with React.js – Websites, UI Components, Frameworks, Apps and more!
+- See http://builtwithreact.io/ for UIs built with React.
+
+## Testing Tools
+
+### Jest
+- It is a test runner
+- It executes tests and proides validation library
+
+### Enzyme
+- Is an effiecient and popular alternative to official React Test Utils.
+- It is open-sourced by AirBnB.
+- It is used to simulate the React App (mounts components, allows you to dig into DOM, etc.)
+- **Important**: Install enzyme along with its peer dependencies for things to work well in your project like below:<BR/>
+    `npm install -D enzyme react-test-renderer enzyme-adapter-react-16`.
+- Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output. You can also manipulate, traverse, and in some ways simulate runtime given the output. Enzyme's API is meant to be intuitive and flexible by mimicking jQuery's API for DOM manipulation and traversal.
+
+###     
 
 ## Available Scripts
 
