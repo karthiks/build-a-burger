@@ -9,7 +9,8 @@ const myMockCallback = jest.fn();
 describe(COMPONENT_TO_TEST, ()=> {
     it('should render NULL when props.orderNow is False', ()=>{
         const wrapper = shallow(<Modal orderNow={false} cancelOrder={myMockCallback} />);
-        expect(wrapper.type()).toBeNull();
+        // expect(wrapper.type()).toBeNull();
+        expect(wrapper).toBeEmptyRender();
     });
     
     it('should render Backdrop when props.orderNow is True', ()=>{

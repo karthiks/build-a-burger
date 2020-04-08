@@ -4,7 +4,10 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom/extend-expect';
 
+// Enzyme is used for mounting React components in tests
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-
 configure({ adapter: new Adapter() });
+
+// Extended enzyme matcher for better tests readability
+import 'jest-enzyme';

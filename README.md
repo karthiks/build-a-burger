@@ -22,6 +22,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - **Important**: Install enzyme along with its peer dependencies for things to work well in your project like below:<BR/>
     `npm install -D enzyme react-test-renderer enzyme-adapter-react-16`.
 - Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output. You can also manipulate, traverse, and in some ways simulate runtime given the output. Enzyme's API is meant to be intuitive and flexible by mimicking jQuery's API for DOM manipulation and traversal.
+- Further install `jest-enzyme` module for extended enzyme matchers by following steps below:
+    - Install like `npm install -D jest-enzyme`
+    - Use `import 'jest-enzyme';` in `setupTests.js`.
 
 ###     
 
