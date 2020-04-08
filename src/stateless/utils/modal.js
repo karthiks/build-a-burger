@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const Modal = (props) => {
     // console.log("Show Modal? : ", props.orderNow);
     if (!props.orderNow) { // Why render complex lists when not required?
-        // console.log("When Model doesn't render a thing!!..")
+        // console.log("When Model doesn't render a thing!!..");
         return null; // Returning null to render nothing!!.. 
     }
 
