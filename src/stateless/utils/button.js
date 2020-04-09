@@ -15,10 +15,12 @@ const Button = (props) => {
 }
 
 Button.defaultProps ={
-    buttonType: "Normal"
+    buttonType: "Normal",
+    disabled: false
 }
 
 Button.propTypes = {
+    disabled: PropTypes.bool,
     buttonType: PropTypes.oneOf(["Normal", "Success", "Danger"]),
     clicked: PropTypes.func.isRequired
 }

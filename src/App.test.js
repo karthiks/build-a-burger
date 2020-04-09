@@ -10,7 +10,7 @@ describe(COMPONENT_UNDER_TEST, () => {
 
   it('App has Layout component', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find(Layout)).toHaveLength(1);
+    expect(wrapper.find(Layout).exists()).toBe(true);
   });
 
   it('App has BurgerBuilder component', () => {
