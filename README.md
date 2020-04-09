@@ -1,6 +1,59 @@
 ## The Creator
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+## The Tech Stack
+- SPA
+    - [x] React (w/ create-react-app, Functional Components, Hooks, PropTypes etc.)
+    - [ ] Preact
+    - [ ] Vue
+    - [ ] Angular
+- Bundling
+    - [x] Webpack (comes as default with create-react-app)
+        - Compile next-gen JS features
+        - Transform JSX to JS
+        - CSS Auto-prefixing (transforming CSS to support various browsers by adding browser specific prefixes)
+        - Support image imports
+        - Optimize code
+        - Integrate Source-mapping
+    - [ ] Bundler
+    - [ ] Browserify
+- Loaders for file transformation
+    - [x] Babel Loader (comes as default with create-react-app)
+    - [ ] CSS Loader
+- Plugins for build transformation to optimize
+    - [] Uglify
+    - [] Babel-minify
+    - [] Terser 
+- Unit Testing
+    - [x] Jest, Enzyme
+    - [ ] [React-Testing-Library](https://github.com/testing-library/react-testing-library)
+    - [ ] Mocha, Chai
+    - [ ] Jasmine
+- E2E Testing
+    - [ ] Cypress
+    - [ ] Selenium
+    - [ ] TestCafe
+    - [ ] Puppeteer
+- UI Styling
+    - [ ] Plain old CSS
+    - [x] Inline Styling
+    - [x] CSS Modules (comes as default with create-react-app)
+    - [ ] [Material UI](https://material-ui.com)
+    - [ ] [React Bootstrap](https://react-bootstrap.github.io)
+- UI Components Emulator for Productive Development and Documentation    
+    - [ ] [Storybook](https://storybook.js.org) is the most popular one as  of today.
+    - [ ] [Atellier](http://scup.github.io/atellier/)
+    - [ ] [react-sketchapp](https://stackshare.io/react-sketchapp)
+    - [ ] [many more..](https://blog.logrocket.com/alternatives-to-react-storybook/)
+- Linting & Transpiling
+    - [x] Babel for transpilation of ES6+ (comes as default with create-react-app)
+    - [x] ESLint for linting
+    - [ ] Typescript
+    - [ ] Flow
+- Server-Side Rendering (SSR) of SPA react apps
+    - [ ] [NextJS](https://nextjs.org/)
+    - [ ] Gatsby
 ## Need more inspiration??
 - See [React Rocks](https://react.rocks/)
 - See https://reactjsexample.com/ for a nice collection of often useful examples done in React.js
