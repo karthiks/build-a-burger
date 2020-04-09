@@ -22,26 +22,26 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - [x] Babel Loader (comes as default with create-react-app)
     - [ ] CSS Loader
 - Plugins for build transformation to optimize
-    - [] Uglify
-    - [] Babel-minify
-    - [] Terser 
+    - [ ] Uglify
+    - [ ] Babel-minify
+    - [ ] Terser
 - Unit Testing
     - [x] Jest, Enzyme
     - [ ] [React-Testing-Library](https://github.com/testing-library/react-testing-library)
     - [ ] Mocha, Chai
     - [ ] Jasmine
 - E2E Testing
-    - [ ] Cypress
+    - [ ] [Cypress](https://www.cypress.io/)
     - [ ] Selenium
-    - [ ] TestCafe
-    - [ ] Puppeteer
+    - [ ] [TestCafe](https://devexpress.github.io/testcafe/)
+    - [ ] [Puppeteer](https://pptr.dev/)
 - UI Styling
     - [ ] Plain old CSS
     - [x] Inline Styling
     - [x] CSS Modules (comes as default with create-react-app)
     - [ ] [Material UI](https://material-ui.com)
     - [ ] [React Bootstrap](https://react-bootstrap.github.io)
-- UI Components Emulator for Productive Development and Documentation    
+- UI Components Emulator for Productive Development and Documentation
     - [ ] [Storybook](https://storybook.js.org) is the most popular one as  of today.
     - [ ] [Atellier](http://scup.github.io/atellier/)
     - [ ] [react-sketchapp](https://stackshare.io/react-sketchapp)
@@ -79,7 +79,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - Install like `npm install -D jest-enzyme`
     - Use `import 'jest-enzyme';` in `setupTests.js`.
 
-###     
+###
 
 ## Available Scripts
 
