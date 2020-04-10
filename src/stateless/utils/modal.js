@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 
 const Modal = (props) => {
     // console.log("Show Modal? : ", props.orderNow);
-    if (!props.orderNow) { // Why render complex lists when not required?
+    if (!props.visibility) { // Why render complex lists when not required?
         // console.log("When Model doesn't render a thing!!..");
-        return null; // Returning null to render nothing!!.. 
+        return null; // Returning null to render nothing!!..
     }
 
     return (
         <Aux>
-            <Backdrop show={props.orderNow} cancel={props.cancelOrder} />
+            <Backdrop show={props.visibility} cancel={props.hide} />
             <div className={classes.Modal} style={{ ...props.style }}>
                 {props.children}
             </div>
@@ -22,8 +22,8 @@ const Modal = (props) => {
 };
 
 Modal.propTypes = {
-    orderNow: PropTypes.bool.isRequired,
-    cancelOrder: PropTypes.func.isRequired
+    visibility: PropTypes.bool.isRequired,
+    hide: PropTypes.func.isRequired
 }
 
 export default Modal;

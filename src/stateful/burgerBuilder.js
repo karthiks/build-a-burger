@@ -64,11 +64,11 @@ class BurgerBuilder extends Component {
         const visibility = this.state.orderNow ? "visible" : "hidden";
         return (
             <Aux>
-                <Modal 
+                <Modal
                     style={{ visibility: visibility}}
-                    orderNow={this.state.orderNow}
-                    cancelOrder={this.cancelOrder}>
-                        <OrderSummary 
+                    visibility={this.state.orderNow}
+                    hide={this.cancelOrder}>
+                        <OrderSummary
                             ingredients={this.state.ingredients}
                             price={this.state.totalPrice}
                             checkout={this.checkout}
