@@ -13,7 +13,7 @@ const Modal = (props) => {
 
     return (
         <Aux>
-            <Backdrop show={props.visibility} cancel={props.hide} />
+            <Backdrop visibility={props.visibility} hide={props.hide} />
             <div className={classes.Modal} style={{ ...props.style }}>
                 {props.children}
             </div>

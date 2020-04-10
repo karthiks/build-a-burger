@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import Modal from './modal';
 
 export default {
-    title: 'App | Modal',
+    title: 'Common | Utils/Modal',
     component: Modal,
 };
 

@@ -4,15 +4,15 @@ import PropTypes from 'prop-types';
 
 const Backdrop = (props) => {
     let content = null;
-    if(props.show) {
-        content = <div onClick={props.cancel} className={classes.Backdrop}></div>;
+    if (props.visibility) {
+        content = <div onClick={props.hide} className={classes.Backdrop}></div>;
     }
     return content;
 }
 
 Backdrop.propTypes = {
-    show: PropTypes.bool.isRequired,
-    cancel: PropTypes.func.isRequired
+    visibility: PropTypes.bool.isRequired,
+    hide: PropTypes.func.isRequired
 }
 
 export default Backdrop;
