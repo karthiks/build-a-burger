@@ -41,7 +41,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - [x] CSS Modules (comes as default with create-react-app)
     - [ ] [Material UI](https://material-ui.com)
     - [ ] [React Bootstrap](https://react-bootstrap.github.io)
-- UI Components Emulator for Productive Development and Documentation
+- UI Components Emulator/Sandbox for Productive Development and Documentation
     - [ ] [Storybook](https://storybook.js.org) is the most popular one as  of today.
     - [ ] [Atellier](http://scup.github.io/atellier/)
     - [ ] [react-sketchapp](https://stackshare.io/react-sketchapp)
@@ -79,7 +79,27 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     - Install like `npm install -D jest-enzyme`
     - Use `import 'jest-enzyme';` in `setupTests.js`.
 
-###
+## npm Quickly
+- To install non-prod dependencies you run `npm i -D`, where `i` implies `install` and `-D` implies `devDependencies`.
+- To install prod dependencies you run `npm i -s`, where `i` implies `install` and `-s` implies `dependencies`.
+
+## Storybook Quickly
+- Website: [Storybook](https://storybook.js.org/addons/)
+- To add storybook to your existing project run commands below from the root directory of your project:
+    ```bash
+        npx -p @storybook/cli sb init #Note it s npx not npm
+        npm run storybook
+
+        # To install additional addons
+        # This addon can be used to display data received by event handlers
+        npm i -D @storybook/addon-actions
+        # This addon is used to show stories source in the addon panel.
+        npm i -D @storybook/addon-storysource
+        # Knobs addon allow you to edit props dynamically using the Storybook UI. You can also use Knobs as a dynamic variable inside stories in Storybook.
+        npm i -D storybook/addon-knobs
+        # Docs addon transforms your Storybook stories into world-class component documentation.
+        npm i -D storybook/addon-docs
+    ```
 
 ## Available Scripts
 
