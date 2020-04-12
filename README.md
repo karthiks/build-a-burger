@@ -93,12 +93,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         # To install additional addons
         # This addon can be used to display data received by event handlers
         npm i -D @storybook/addon-actions
-        # This addon is used to show stories source in the addon panel.
+        # Docs addon transforms your Storybook stories into component's live document. This is used as replacement for addon-info.
+        npm i -D storybook/addon-docs
+        # This addon is used to show stories source in the addon panel as "Story" tab.
         npm i -D @storybook/addon-storysource
         # Knobs addon allow you to edit props dynamically using the Storybook UI. You can also use Knobs as a dynamic variable inside stories in Storybook.
         npm i -D storybook/addon-knobs
-        # Docs addon transforms your Storybook stories into world-class component documentation.
-        npm i -D storybook/addon-docs
     ```
 
 ## Available Scripts
