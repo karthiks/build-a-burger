@@ -6,5 +6,6 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-docs',
     '@storybook/addon-storysource',
+    '@storybook/addon-a11y/register',
   ],
 };
