@@ -97,8 +97,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         npm i -D storybook/addon-docs
         # This addon is used to show stories source in the addon panel as "Story" tab.
         npm i -D @storybook/addon-storysource
-        # Knobs addon allow you to edit props dynamically using the Storybook UI. You can also use Knobs as a dynamic variable inside stories in Storybook.
+        # Knobs addon allow you to edit props dynamically using the Storybook UI. You can also use Knobs as a dynamic variable inside stories in Storybook. After this you can use text, boolean, and other knobs as needed inplace of hardcoded values in your stories.
         npm i -D storybook/addon-knobs
+        # a11y for testing ui components against web accessibility standards and report in Accessibility addon tab
+        npm i -D storybook/addon-a11y
+    ```
+    - All addons need to be registered and thus got to be included in the `.storybo/main.js` like below:
+    ```javascript
+        module.exports = {
+            stories: ['../src/**/*.stories.js'],
+            addons: [
+                '@storybook/preset-create-react-app',
+                '@storybook/addon-actions',
+                '@storybook/addon-links',
+                '@storybook/addon-docs',
+                '@storybook/addon-storysource',
+                '@storybook/addon-a11y/register',
+            ],
+        };
+    ```
+    - Some addons are like `a11y` are Decorators which can either be applied at component level or globally for all components. For configuring it globally you configure it in `preview.js` file like how it is done below for `a11y` addon:
+    ```javascript
+        import { addDecorator } from '@storybook/react';
+        import { withA11y } from '@storybook/addon-a11y';
+
+        addDecorator(withA11y);
     ```
 
 ## Available Scripts
