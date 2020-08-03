@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../hoc/aux'
+import Aux from '../hoc/_aux'
 import classes from './layout.module.css';
 import Toolbar from './toolbar';
 

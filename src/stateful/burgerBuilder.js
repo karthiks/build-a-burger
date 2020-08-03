@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../hoc/aux';
+import Aux from '../hoc/_aux';
 import Burger from '../stateless/burger';
 import IngredientsMenu from '../stateless/ingredientsMenu';
 import Modal from '../stateless/utils/modal';
